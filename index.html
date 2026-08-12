@@ -1,1 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Gergaji Mini Portable — Potong Kayu Sekali Tekan!</title>
+<meta name="description" content="Gergaji Mini Portable Listrik Tanpa Kabel. Ringan, kuat, potong kayu & dahan dalam hitungan detik. PROMO + COD + Gratis Ongkir.">
+<meta property="og:title" content="Gergaji Mini Portable — Potong Kayu Sekali Tekan!">
+<meta property="og:image" content="hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand:#0E9F8E; --brand2:#14B8A6;
+    --orange:#F97316; --orange2:#FB8C4A;  /* accent hangat untuk tombol/promo */
+    --dark:#1E3A34; --ink:#2C3A38;
+    --green:#12A150; --yellow:#F5B301; --bg:#EDF6F3;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
+  body{font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.55;font-size:15.5px;font-weight:500;overflow-x:hidden}
+  h1,h2,.hero .now,.badge-top,.cta,.sticky a{font-family:'Nunito','Plus Jakarta Sans',sans-serif}
+  .wrap{max-width:480px;margin:0 auto;background:#fff;box-shadow:0 0 40px rgba(0,0,0,.08);position:relative}
+  img{max-width:100%;display:block}
 
+  /* running promo bar */
+  .marquee{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;padding:9px 0}
+  .marquee span{display:inline-block;padding-left:100%;animation:run 12s linear infinite}
+  @keyframes run{to{transform:translateX(-100%)}}
+
+  /* hero */
+  .hero{background:linear-gradient(165deg,#ffffff 0%,#e2f5ef 100%);padding:16px 16px 24px;text-align:center}
+  .badge-top{display:inline-block;background:var(--orange);color:#fff;font-weight:800;font-size:12px;
+    letter-spacing:.5px;padding:5px 14px;border-radius:30px;margin-bottom:12px;
+    box-shadow:0 4px 14px rgba(238,77,45,.4);animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+  .hero h1{font-size:28px;font-weight:800;line-height:1.18;color:var(--dark);margin-bottom:8px;letter-spacing:-.3px}
+  .hero h1 em{color:var(--brand);font-style:normal}
+  .hero .sub{font-size:15px;color:#5a6b66;font-weight:600;margin-bottom:14px}
+  .hero-img{border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.18);position:relative;margin-bottom:6px}
+  .hero-img .flash{position:absolute;top:12px;left:12px;background:var(--yellow);color:#111;font-weight:900;
+    font-size:12px;padding:5px 10px;border-radius:8px;transform:rotate(-6deg)}
+
+  /* price */
+  .price{margin:16px 0 6px}
+  .price .old{color:#999;text-decoration:line-through;font-size:17px;font-weight:600}
+  .price .now{color:var(--orange);font-size:38px;font-weight:900;display:block;line-height:1}
+  .price .save{display:inline-block;background:#ffe1d9;color:var(--orange);font-weight:800;font-size:12px;
+    padding:3px 10px;border-radius:20px;margin-top:6px}
+
+  /* buttons */
+  .cta{display:block;width:100%;background:linear-gradient(90deg,var(--orange),var(--orange2));color:#fff;
+    text-align:center;font-weight:900;font-size:19px;padding:16px;border:none;border-radius:14px;
+    box-shadow:0 8px 22px rgba(238,77,45,.45);cursor:pointer;text-decoration:none;
+    animation:ctaPulse 1.8s infinite}
+  @keyframes ctaPulse{0%,100%{box-shadow:0 8px 22px rgba(238,77,45,.45)}50%{box-shadow:0 8px 30px rgba(238,77,45,.75)}}
+  .cta small{display:block;font-weight:600;font-size:12px;opacity:.9;margin-top:2px}
+
+  /* trust badges */
+  .trust{display:flex;justify-content:space-around;text-align:center;padding:16px 8px;background:#fff;border-bottom:1px solid #eee}
+  .trust div{flex:1;font-size:11px;font-weight:700;color:#444}
+  .trust .ic{font-size:24px;display:block;margin-bottom:3px}
+
+  /* section */
+  .sec{padding:26px 16px}
+  .sec h2{font-size:23px;font-weight:800;text-align:center;color:var(--dark);margin-bottom:4px;letter-spacing:-.3px}
+  .sec h2 em{color:var(--brand);font-style:normal}
+  .sec .lead{text-align:center;color:#6a7a75;font-size:14px;margin-bottom:16px;font-weight:600}
+
+  /* action gif */
+  .action{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(14,159,142,.22);background:#000}
+  .action video,.action img{width:100%;display:block}
+  .vhint{text-align:center;font-size:12px;color:#7a8a85;font-weight:600;margin-top:8px}
+  .action .tag{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.8));
+    color:#fff;font-weight:800;font-size:15px;padding:22px 14px 12px;text-align:center}
+
+  /* feature cards (icon-first, minim teks) */
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px 12px;text-align:center;
+    box-shadow:0 4px 14px rgba(0,0,0,.05)}
+  .card .ic{font-size:34px;margin-bottom:8px}
+  .card b{display:block;font-size:14px;color:var(--dark)}
+  .card span{font-size:11.5px;color:#777}
+
+  /* problem-solution strip */
+  .ps{background:var(--dark);color:#fff;border-radius:18px;padding:20px 16px;text-align:center}
+  .ps .x{color:#ff6b6b;font-weight:800;font-size:14px;margin-bottom:6px}
+  .ps .v{color:#5ee08a;font-weight:800;font-size:16px}
+
+  /* rating */
+  .rate{text-align:center;padding:22px 16px;background:linear-gradient(180deg,#fff,#fff6f3)}
+  .stars{color:var(--yellow);font-size:28px;letter-spacing:2px}
+  .rate .num{font-weight:900;font-size:16px;margin-top:4px}
+  .rev{display:flex;gap:10px;overflow-x:auto;padding:14px 2px 4px;scroll-snap-type:x mandatory}
+  .rev::-webkit-scrollbar{display:none}
+  .revc{min-width:230px;scroll-snap-align:start;background:#fff;border:1px solid #eee;border-radius:14px;
+    padding:12px;text-align:left;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+  .revc .s{color:var(--yellow);font-size:14px}
+  .revc p{font-size:12.5px;color:#444;margin:4px 0 6px}
+  .revc b{font-size:12px;color:var(--dark)}
+  .revc b span{color:var(--green);font-weight:600}
+
+  /* urgency */
+  .urg{background:#fff3cd;border:1px dashed var(--orange);border-radius:14px;padding:14px;text-align:center;margin-top:8px}
+  .urg b{color:var(--orange);font-size:15px}
+  .stock{height:9px;background:#eee;border-radius:6px;overflow:hidden;margin:10px 0 6px}
+  .stock i{display:block;height:100%;width:18%;background:linear-gradient(90deg,var(--orange),var(--orange2))}
+
+  /* galeri produk */
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .ph{position:relative;background:#f0f0f0;border-radius:14px;overflow:hidden;aspect-ratio:1;
+    border:1px solid #e6e6e6;display:flex;align-items:center;justify-content:center}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+  .ph .ph-label{position:relative;z-index:1;text-align:center;color:#9a9a9a;font-size:12px;font-weight:700;padding:8px}
+  .ph .ph-label small{font-weight:600;color:#bbb;font-size:10.5px}
+  .ph.big{grid-column:1 / -1;aspect-ratio:16/11}
+
+  /* spesifikasi */
+  .spec{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden}
+  .spec .row{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;border-bottom:1px solid #f2f2f2;font-size:13.5px}
+  .spec .row:last-child{border-bottom:0}
+  .spec .row .k{color:#777;font-weight:600;display:flex;align-items:center;gap:8px}
+  .spec .row .k .i{font-size:18px}
+  .spec .row .v{color:var(--dark);font-weight:800;text-align:right}
+
+  /* isi paket */
+  .paket{background:linear-gradient(160deg,#fff,#f3fbf5);border:1px solid #d8efdf;border-radius:16px;padding:16px}
+  .paket .pit{display:flex;align-items:center;gap:10px;padding:8px 0;font-size:14px;font-weight:600;color:#2a2a2a;border-bottom:1px dashed #d8e8dc}
+  .paket .pit:last-child{border-bottom:0}
+  .paket .pit .c{color:var(--green);font-weight:900;font-size:18px}
+
+  /* cara pakai */
+  .steps{display:flex;flex-direction:column;gap:12px}
+  .step{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #eee;border-radius:14px;padding:12px}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;
+    display:flex;align-items:center;justify-content:center;font-size:16px}
+  .step b{font-size:14px;color:var(--dark)}
+  .step span{font-size:12px;color:#777}
+
+  /* order form */
+  .order{background:linear-gradient(160deg,var(--orange),var(--orange2));padding:26px 16px 30px}
+  .order h2{color:#fff;text-align:center;font-size:22px;font-weight:900;margin-bottom:2px}
+  .order .lead{color:#fff;opacity:.95}
+  .formbox{background:#fff;border-radius:18px;padding:18px 16px;box-shadow:0 12px 34px rgba(0,0,0,.25)}
+  .formbox label{font-size:12.5px;font-weight:700;color:#444;margin:10px 0 4px;display:block}
+  .formbox input,.formbox select,.formbox textarea{width:100%;padding:12px;border:1.5px solid #e2e2e2;
+    border-radius:10px;font-size:15px;font-family:inherit;background:#fafafa}
+  .formbox input:focus,.formbox textarea:focus,.formbox select:focus{outline:none;border-color:var(--orange);background:#fff}
+  .formbox textarea{resize:vertical;min-height:64px}
+  .qty{display:flex;gap:8px}
+  .submit{margin-top:16px;background:var(--green);color:#fff;font-weight:900;font-size:18px;border:none;
+    width:100%;padding:15px;border-radius:12px;box-shadow:0 8px 20px rgba(27,169,76,.4);cursor:pointer}
+  .note{font-size:11px;color:#fff;text-align:center;opacity:.9;margin-top:12px}
+
+  /* embed slot */
+  .embed-slot{margin-top:16px;background:#fff;border-radius:18px;padding:6px;box-shadow:0 12px 34px rgba(0,0,0,.2)}
+  .embed-slot iframe{width:100%;border:0;border-radius:14px;min-height:520px;display:block}
+
+  footer{background:var(--dark);color:#aaa;text-align:center;font-size:11px;padding:20px 16px 90px}
+
+  /* sticky bottom bar */
+  .sticky{position:fixed;bottom:0;left:0;right:0;z-index:99;max-width:480px;margin:0 auto;
+    background:#fff;box-shadow:0 -6px 20px rgba(0,0,0,.15);padding:10px 12px;display:flex;gap:10px;align-items:center}
+  .sticky .p{flex:0 0 auto}
+  .sticky .p .o{color:#999;text-decoration:line-through;font-size:11px}
+  .sticky .p .n{color:var(--orange);font-weight:900;font-size:18px;line-height:1}
+  .sticky a{flex:1;background:linear-gradient(90deg,var(--orange),var(--orange2));color:#fff;text-align:center;
+    font-weight:900;font-size:16px;padding:13px;border-radius:12px;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- PROMO BERJALAN -->
+  <div class="marquee"><span>🔥 PROMO HARI INI • GRATIS ONGKIR • BAYAR DI TEMPAT (COD) • GARANSI 30 HARI • STOK TERBATAS 🔥</span></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="badge-top">⚡ BEST SELLER 2026</span>
+    <h1>Gergaji Mini <em>Tanpa Kabel</em><br>Potong Kayu Sekali Tekan!</h1>
+    <p class="sub">Ringan • Kuat • Praktis dibawa ke mana saja</p>
+    <div class="hero-img">
+      <span class="flash">DISKON 40%</span>
+      <img src="hero.jpg" alt="Gergaji Mini Portable">
+    </div>
+    <div class="price">
+      <span class="old">Rp 1.145.000</span>
+      <span class="now">Rp 689.999</span><br>
+      <span class="save">HEMAT Rp 455.000</span>
+    </div>
+    <a href="#order" class="cta">PESAN SEKARANG <small>Bayar di tempat (COD) ✓</small></a>
+  </section>
+
+  <!-- TRUST -->
+  <div class="trust">
+    <div><span class="ic">🚚</span>Gratis<br>Ongkir</div>
+    <div><span class="ic">💵</span>Bayar<br>di Tempat</div>
+    <div><span class="ic">🛡️</span>Garansi<br>30 Hari</div>
+    <div><span class="ic">⭐</span>4.9<br>Rating</div>
+  </div>
+
+  <!-- ACTION GIF -->
+  <section class="sec">
+    <h2>Lihat <em>Kekuatannya</em> 👇</h2>
+    <p class="lead">Dahan & kayu tebal? Cukup detik-detikan.</p>
+    <div class="action">
+      <video src="demo.mp4" poster="hero.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+      <div class="tag">▶ Potong kayu tebal tanpa keluar tenaga 💥</div>
+    </div>
+    <p class="vhint">🔊 Ketuk video untuk menyalakan suara</p>
+    <div class="action" style="margin-top:6px">
+      <img src="action.gif" alt="Aksi memotong kayu" loading="lazy">
+      <div class="tag">Sekali tarik, langsung tembus ✅</div>
+    </div>
+  </section>
+
+  <!-- GALERI DETAIL PRODUK -->
+  <section class="sec" style="padding-top:6px">
+    <h2>Detail <em>Produk</em> 📸</h2>
+    <p class="lead">Lihat dari dekat, konsumen berhak tahu 👌</p>
+    <div class="gallery">
+      <div class="ph big">
+        <img src="hero.jpg" alt="Tampak produk">
+      </div>
+      <div class="ph">
+        <img src="foto1.jpg" alt="Detail bilah & rantai" onerror="this.style.display='none'">
+        <span class="ph-label">📷 Foto detail<br><small>ganti: foto1.jpg</small></span>
+      </div>
+      <div class="ph">
+        <img src="foto2.jpg" alt="Detail baterai" onerror="this.style.display='none'">
+        <span class="ph-label">📷 Foto detail<br><small>ganti: foto2.jpg</small></span>
+      </div>
+      <div class="ph">
+        <img src="foto3.jpg" alt="Digenggam tangan (ukuran)" onerror="this.style.display='none'">
+        <span class="ph-label">📷 Ukuran di tangan<br><small>ganti: foto3.jpg</small></span>
+      </div>
+      <div class="ph">
+        <img src="foto4.jpg" alt="Dipakai memotong" onerror="this.style.display='none'">
+        <span class="ph-label">📷 Saat dipakai<br><small>ganti: foto4.jpg</small></span>
+      </div>
+    </div>
+    <p style="font-size:11px;color:#aaa;text-align:center;margin-top:10px">
+      Taruh foto asli listing (foto1.jpg–foto4.jpg) di folder yang sama biar tampil otomatis.
+    </p>
+  </section>
+
+  <!-- SPESIFIKASI -->
+  <section class="sec" style="padding-top:2px">
+    <h2>Spesifikasi <em>Lengkap</em> 📋</h2>
+    <p class="lead">Transparan — biar kamu yakin sebelum beli</p>
+    <div class="spec">
+      <div class="row"><span class="k"><span class="i">🪚</span>Panjang Bilah</span><span class="v">4 Inci</span></div>
+      <div class="row"><span class="k"><span class="i">🔋</span>Sumber Daya</span><span class="v">Baterai Li-ion (Cas Ulang)</span></div>
+      <div class="row"><span class="k"><span class="i">⚙️</span>Motor</span><span class="v">Tembaga — Bertenaga</span></div>
+      <div class="row"><span class="k"><span class="i">⛓️</span>Bahan Rantai</span><span class="v">Baja SK5 Tajam</span></div>
+      <div class="row"><span class="k"><span class="i">🪶</span>Berat</span><span class="v">± 0,8 kg (Ringan)</span></div>
+      <div class="row"><span class="k"><span class="i">🔒</span>Keamanan</span><span class="v">Safety Lock Ganda</span></div>
+      <div class="row"><span class="k"><span class="i">🎯</span>Fungsi</span><span class="v">Kayu • Dahan • Kebun</span></div>
+    </div>
+    <p style="font-size:11px;color:#aaa;text-align:center;margin-top:8px">
+      *Sesuaikan angka spesifikasi dengan listing Shopee kamu.
+    </p>
+  </section>
+
+  <!-- ISI PAKET -->
+  <section class="sec" style="padding-top:2px">
+    <h2>Isi <em>Paket</em> 📦</h2>
+    <p class="lead">Yang kamu terima dalam 1 box</p>
+    <div class="paket">
+      <div class="pit"><span class="c">✓</span> 1× Unit Gergaji Mini</div>
+      <div class="pit"><span class="c">✓</span> 2× Baterai (cadangan)</div>
+      <div class="pit"><span class="c">✓</span> 1× Charger / Adaptor</div>
+      <div class="pit"><span class="c">✓</span> 1× Rantai Cadangan</div>
+      <div class="pit"><span class="c">✓</span> Kunci + Botol Oli</div>
+      <div class="pit"><span class="c">✓</span> Buku Panduan</div>
+    </div>
+    <p style="font-size:11px;color:#aaa;text-align:center;margin-top:8px">*Cek & sesuaikan isi paket dengan produk kamu.</p>
+  </section>
+
+  <!-- CARA PAKAI -->
+  <section class="sec" style="padding-top:2px">
+    <h2>Cara <em>Pakai</em> ⚡</h2>
+    <p class="lead">Semudah 1-2-3</p>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><b>Pasang baterai</b><br><span>Klik sampai bunyi, langsung siap</span></div></div>
+      <div class="step"><div class="n">2</div><div><b>Buka kunci pengaman</b><br><span>Geser safety lock — aman di tangan</span></div></div>
+      <div class="step"><div class="n">3</div><div><b>Tekan & potong</b><br><span>Tempel ke kayu, tekan tombol, selesai!</span></div></div>
+    </div>
+  </section>
+
+  <!-- FITUR (icon-first) -->
+  <section class="sec" style="padding-top:4px">
+    <h2>Kenapa <em>Wajib Punya?</em></h2>
+    <p class="lead">Semua yang kamu butuh, dalam 1 genggaman</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🪶</div><b>Super Ringan</b><span>Satu tangan, anti pegal</span></div>
+      <div class="card"><div class="ic">🔋</div><b>Baterai Awet</b><span>Cas cepat, tahan lama</span></div>
+      <div class="card"><div class="ic">⚡</div><b>Tenaga Besar</b><span>Motor tembaga kuat</span></div>
+      <div class="card"><div class="ic">🔒</div><b>Aman Dipakai</b><span>Kunci pengaman ganda</span></div>
+      <div class="card"><div class="ic">🌳</div><b>Serbaguna</b><span>Kebun, taman, proyek</span></div>
+      <div class="card"><div class="ic">🧰</div><b>Set Lengkap</b><span>Rantai & alat bonus</span></div>
+    </div>
+  </section>
+
+  <!-- PROBLEM - SOLUTION -->
+  <section class="sec" style="padding-top:0">
+    <div class="ps">
+      <p class="x">❌ Gergaji manual bikin capek, lama, keringetan</p>
+      <p class="v">✅ Pakai ini: potong dahan tebal cukup 5 detik, tanpa tenaga!</p>
+    </div>
+  </section>
+
+  <!-- RATING & REVIEW -->
+  <section class="rate">
+    <div class="stars">★★★★★</div>
+    <div class="num">4.9/5 • 2.300+ Terjual 🔥</div>
+    <div class="rev">
+      <div class="revc"><div class="s">★★★★★</div><p>"Gila ringan banget, dahan mangga langsung putus. Nyesel gak beli dari dulu."</p><b>Budi S. <span>✔ Pembeli Terverifikasi</span></b></div>
+      <div class="revc"><div class="s">★★★★★</div><p>"Barang sampai cepat, COD aman. Baterainya awet buat motong seharian."</p><b>Rahmat <span>✔ Pembeli Terverifikasi</span></b></div>
+      <div class="revc"><div class="s">★★★★★</div><p>"Buat bersihin kebun jadi gampang. Istri juga bisa pakai, ringan."</p><b>Slamet W. <span>✔ Pembeli Terverifikasi</span></b></div>
+    </div>
+  </section>
+
+  <!-- URGENCY -->
+  <section class="sec" style="padding-top:6px">
+    <div class="urg">
+      <b>⏰ PROMO HARI INI BERAKHIR!</b>
+      <div class="stock"><i></i></div>
+      <span style="font-size:12.5px;color:#a05a00;font-weight:700">Sisa stok tinggal <b style="color:var(--orange)">17 unit</b> — buruan sebelum harga normal balik!</span>
+    </div>
+  </section>
+
+  <!-- ORDER FORM -->
+  <section class="order" id="order">
+    <h2>📦 Pesan Sekarang</h2>
+    <p class="lead" style="text-align:center;margin-bottom:14px">Isi data di bawah — kami proses & kirim hari ini juga!</p>
+
+    <div class="formbox" style="padding:16px 14px">
+      <!-- OrderOnline Embed Code - v8.0.2 -->
+      <div class="ooef"> <form class="orderonline-embed-form" data-username="rosa" data-product-slug="gergaji-mini-tanpa-kabel" data-product-id="6a7c4ecee8e9b145a0023d30" id="oo-embed-form-gergaji-mini-tanpa-kabel-3611" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.2', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.2';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://rosa.orderonline.id'); ooe('init', '5f17ee268dcbdb1b55498d78', '6a7c4ecee8e9b145a0023d30', '6a7c4ecee8e9b145a0023d31', 'oo-embed-form-gergaji-mini-tanpa-kabel-3611', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
+    </div>
+
+    <p class="note">🔒 Aman & terpercaya • Bayar di Tempat (COD) tersedia • CS siap bantu 👇</p>
+  </section>
+
+  <footer>
+    © 2026 Neidaa Store • Gergaji Mini Portable<br>
+    Produk bergaransi • Pengiriman ke seluruh Indonesia
+  </footer>
+
+  <!-- STICKY CTA -->
+  <div class="sticky">
+    <div class="p"><span class="o">Rp1.145rb</span><br><span class="n">Rp689.999</span></div>
+    <a href="#order">PESAN SEKARANG ✓</a>
+  </div>
+
+</div>
+</body>
+</html>
